@@ -1,0 +1,100 @@
+/* components/DestinationExplorer.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  max-width: 150px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.destinations-list {
+  width: 100%;
+  max-width: 300px;
+  overflow-y: auto;
+  margin-top: 10px; /* Add a gap at the top */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px; /* Add a gap between list items */
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    max-width: none;
+    margin-top: 10px; /* Add a gap between button and input */
+  }
+
+  .destinations-list {
+    max-width: none;
+    margin-top: 10px; /* Add a gap at the top */
+  }
+
+  li {
+    margin-bottom: 10px; /* Add a gap between list items */
+  }
+}
